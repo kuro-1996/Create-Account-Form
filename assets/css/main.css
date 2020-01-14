@@ -7849,80 +7849,78 @@ header img {
   padding: 15px;
 }
 
-.step3 .step3__content .employ .employ__header {
+.step3 .step3__content .content__employ .employ__header {
   border-bottom: 2px solid #ccc;
   margin-bottom: 20px;
 }
 
-.step3 .step3__content .employ .employ__header h4 {
+.step3 .step3__content .content__employ .employ__header h4 {
   color: #868686;
   padding: 10px 0;
   font-weight: 600;
 }
 
-.step3 .step3__content .employ .employ__content {
+.step3 .step3__content .content__employ .employ__content {
   margin-bottom: 80px;
   position: relative;
 }
 
-.step3 .step3__content .employ .employ__content label {
+.step3 .step3__content .content__employ .employ__content label {
   font-weight: 600;
 }
 
-.step3 .step3__content .employ .employ__content select.invalid {
+.step3 .step3__content .content__employ .employ__content select.invalid {
   border-color: #cd201f;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(205, 32, 31, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(205, 32, 31, 0.25);
 }
 
-.step3 .step3__content .employ .employ__content select.valid {
+.step3 .step3__content .content__employ .employ__content select.valid {
   border-color: #87c540;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(135, 197, 64, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(135, 197, 64, 0.25);
 }
 
-.step3 .step3__content .finance .finance__header {
+.step3 .step3__content .content__finance .finance__header {
   border-bottom: 2px solid #ccc;
-}
-
-.step3 .step3__content .finance .finance__header h4 {
   color: #868686;
   padding: 10px 0;
   font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
-.step3 .step3__content .finance .finance__content .income {
-  padding: 30px 0;
+.step3 .step3__content .content__finance .finance__content .content__income {
+  margin-bottom: 30px;
   position: relative;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__top {
+.step3 .step3__content .content__finance .finance__content .content__income .income__top {
   margin-bottom: 20px;
-}
-
-.step3 .step3__content .finance .finance__content .income .income__top h5 {
   font-weight: 600;
+  font-size: 18px;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__top::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  bottom: 39px;
-  background: #ccc;
-  position: absolute;
-}
-
-.step3 .step3__content .finance .finance__content .income .income__bot {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  position: relative;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 9px;
+  background: #ccc;
+  position: absolute;
+}
+
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7940,20 +7938,20 @@ header img {
   width: 100%;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item label {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item label {
   padding: 0 5px;
   color: #1d1e22;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item label.active {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item label.active {
   background: #87c540;
   border-radius: 3px;
   position: relative;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item label.active::after {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item label.active::after {
   width: 8px;
   height: 8px;
   content: "";
@@ -7965,7 +7963,7 @@ header img {
           transform: rotate(45deg) translate(-53%, 5px);
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item .item__select {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item .item__select {
   width: 20px;
   height: 20px;
   background: #ebebeb;
@@ -7977,7 +7975,7 @@ header img {
   outline: none;
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item .item__select:hover::before {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item .item__select:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -7986,7 +7984,7 @@ header img {
   background: rgba(135, 197, 64, 0.7);
 }
 
-.step3 .step3__content .finance .finance__content .income .income__bot .bot__item .item__select:checked::before {
+.step3 .step3__content .content__finance .finance__content .content__income .income__bot .bot__item .item__select:checked::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -7995,38 +7993,37 @@ header img {
   background: #87c540;
 }
 
-.step3 .step3__content .finance .finance__content .invest {
-  padding: 30px 0;
+.step3 .step3__content .content__finance .finance__content .content__invest {
+  margin-bottom: 30px;
   position: relative;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__top {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__top {
   margin-bottom: 20px;
-}
-
-.step3 .step3__content .finance .finance__content .invest .invest__top h5 {
   font-weight: 600;
+  font-size: 18px;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__top::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  bottom: 39px;
-  background: #ccc;
-  position: absolute;
-}
-
-.step3 .step3__content .finance .finance__content .invest .invest__bot {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 9px;
+  background: #ccc;
+  position: absolute;
+}
+
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8044,20 +8041,20 @@ header img {
   width: 100%;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item label {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item label {
   padding: 0 5px;
   color: #1d1e22;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item label.active {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item label.active {
   background: #87c540;
   border-radius: 3px;
   position: relative;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item label.active::after {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item label.active::after {
   width: 8px;
   height: 8px;
   content: "";
@@ -8069,7 +8066,7 @@ header img {
           transform: rotate(45deg) translate(-53%, 5px);
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item .item__select {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item .item__select {
   width: 20px;
   height: 20px;
   position: relative;
@@ -8080,7 +8077,7 @@ header img {
   outline: none;
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item .item__select:hover::before {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item .item__select:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -8089,7 +8086,7 @@ header img {
   background: rgba(135, 197, 64, 0.7);
 }
 
-.step3 .step3__content .finance .finance__content .invest .invest__bot .bot__item .item__select:checked::before {
+.step3 .step3__content .content__finance .finance__content .content__invest .invest__bot .bot__item .item__select:checked::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -8098,29 +8095,27 @@ header img {
   background: #87c540;
 }
 
-.step3 .step3__content .trade .trade__header {
+.step3 .step3__content .content__trade .trade__header {
   border-bottom: 2px solid #ccc;
-}
-
-.step3 .step3__content .trade .trade__header h4 {
   color: #868686;
   padding: 10px 0;
   font-weight: 600;
+  font-size: 20px;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 {
+.step3 .step3__content .content__trade .trade__content .content__top {
   padding: 30px 0;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 h5 {
+.step3 .step3__content .content__trade .trade__content .content__top h5 {
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange,
-.step3 .step3__content .trade .trade__content .content__quest1 .share,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread {
-  padding: 20px 0;
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread {
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8129,30 +8124,32 @@ header img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange h5,
-.step3 .step3__content .trade .trade__content .content__quest1 .share h5,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread h5 {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange h5,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share h5,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread h5 {
   font-weight: 500;
   width: 100%;
+  margin-bottom: 20px;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange input,
-.step3 .step3__content .trade .trade__content .content__quest1 .share input,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread input {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange input,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share input,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread input {
   display: none;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange input:checked + label,
-.step3 .step3__content .trade .trade__content .content__quest1 .share input:checked + label,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread input:checked + label {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange input:checked + label,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share input:checked + label,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread input:checked + label {
   border: 3px solid #87c540;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange input:checked + label i,
-.step3 .step3__content .trade .trade__content .content__quest1 .share input:checked + label i,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread input:checked + label i {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange input:checked + label i,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share input:checked + label i,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread input:checked + label i {
   display: block;
   position: absolute;
   top: -7px;
@@ -8162,16 +8159,16 @@ header img {
   border-radius: 50%;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange label,
-.step3 .step3__content .trade .trade__content .content__quest1 .share label,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread label {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange label,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share label,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread label {
   position: relative;
   color: #000;
   font-size: 18px;
   font-size: 1.125rem;
   text-align: center;
   height: 60px;
-  line-height: 60px;
+  line-height: 56px;
   display: block;
   margin: 0;
   cursor: pointer;
@@ -8179,68 +8176,68 @@ header img {
   border-radius: 10px;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange label.invalid,
-.step3 .step3__content .trade .trade__content .content__quest1 .share label.invalid,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread label.invalid {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange label.invalid,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share label.invalid,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread label.invalid {
   border-color: rgba(205, 32, 31, 0.7);
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange label:hover,
-.step3 .step3__content .trade .trade__content .content__quest1 .share label:hover,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread label:hover {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange label:hover,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share label:hover,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread label:hover {
   border-color: rgba(135, 197, 64, 0.7);
 }
 
 @media screen and (max-width: 767px) {
-  .step3 .step3__content .trade .trade__content .content__quest1 .exchange label,
-  .step3 .step3__content .trade .trade__content .content__quest1 .share label,
-  .step3 .step3__content .trade .trade__content .content__quest1 .spread label {
+  .step3 .step3__content .content__trade .trade__content .content__top .top__exchange label,
+  .step3 .step3__content .content__trade .trade__content .content__top .top__share label,
+  .step3 .step3__content .content__trade .trade__content .content__top .top__spread label {
     font-size: 16px;
     font-size: 1rem;
   }
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange label i,
-.step3 .step3__content .trade .trade__content .content__quest1 .share label i,
-.step3 .step3__content .trade .trade__content .content__quest1 .spread label i {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange label i,
+.step3 .step3__content .content__trade .trade__content .content__top .top__share label i,
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread label i {
   display: none;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .exchange .exchange__item {
+.step3 .step3__content .content__trade .trade__content .content__top .top__exchange .exchange__item {
   width: 23%;
   position: relative;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .share .share__item {
+.step3 .step3__content .content__trade .trade__content .content__top .top__share .share__item {
   width: 23%;
   position: relative;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest1 .spread .spread__item {
+.step3 .step3__content .content__trade .trade__content .content__top .top__spread .spread__item {
   width: 23%;
   position: relative;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest2,
-.step3 .step3__content .trade .trade__content .content__quest3 {
+.step3 .step3__content .content__trade .trade__content .content__mid,
+.step3 .step3__content .content__trade .trade__content .content__bot {
   margin-bottom: 30px;
   position: relative;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest2 label,
-.step3 .step3__content .trade .trade__content .content__quest3 label {
+.step3 .step3__content .content__trade .trade__content .content__mid label,
+.step3 .step3__content .content__trade .trade__content .content__bot label {
   font-weight: 600;
 }
 
-.step3 .step3__content .trade .trade__content .content__quest2 select.valid,
-.step3 .step3__content .trade .trade__content .content__quest3 select.valid {
+.step3 .step3__content .content__trade .trade__content .content__mid select.valid,
+.step3 .step3__content .content__trade .trade__content .content__bot select.valid {
   border-color: #87c540;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(135, 197, 64, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(135, 197, 64, 0.25);
 }
 
-.step3 .step3__content .trade .trade__content .content__quest2 select.invalid,
-.step3 .step3__content .trade .trade__content .content__quest3 select.invalid {
+.step3 .step3__content .content__trade .trade__content .content__mid select.invalid,
+.step3 .step3__content .content__trade .trade__content .content__bot select.invalid {
   border-color: #cd201f;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(205, 32, 31, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(205, 32, 31, 0.25);
@@ -8258,7 +8255,7 @@ header img {
   transition: all 0.2s ease-in-out;
 }
 
-.step3 .form-submit.valid:hover {
+.step3 .form-submit:hover {
   border-color: #87c540;
   -webkit-box-shadow: 3px 3px 5px rgba(135, 197, 64, 0.8);
           box-shadow: 3px 3px 5px rgba(135, 197, 64, 0.8);

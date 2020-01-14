@@ -256,7 +256,7 @@ header {
 			padding: 15px;
 		}
 		// .content__info {
-		.employ {
+		.content__employ {
 			.employ__header {
 				border-bottom: 2px solid #ccc;
 				margin-bottom: 20px;
@@ -284,37 +284,37 @@ header {
 				}
 			}
 		}
-		.finance {
+		.content__finance {
 			.finance__header {
 				border-bottom: 2px solid #ccc;
-				h4 {
-					color: #868686;
-					padding: 10px 0;
-					font-weight: 600;
-				}
+				color: #868686;
+				padding: 10px 0;
+				font-weight: 600;
+				margin-bottom: 30px;
+				font-size: 20px;
 			}
 			.finance__content {
-				.income {
-					padding: 30px 0;
+				.content__income {
+					margin-bottom: 30px;
 					position: relative;
 					.income__top {
 						margin-bottom: 20px;
-						h5 {
-							font-weight: 600;
-						}
-						&::after {
-							content: "";
-							width: 100%;
-							height: 2px;
-							bottom: 39px;
-							background: #ccc;
-							position: absolute;
-						}
+						font-weight: 600;
+						font-size: 18px;	
 					}
 					.income__bot {
 						display: flex;
 						justify-content: space-around;
 						width: 100%;
+						position: relative;
+						&::after {
+							content: "";
+							width: 100%;
+							height: 2px;
+							bottom: 9px;
+							background: #ccc;
+							position: absolute;
+						}
 						.bot__item {
 							position: relative;
 							display: flex;
@@ -373,27 +373,27 @@ header {
 						}
 					}
 				}
-				.invest {
-					padding: 30px 0;
+				.content__invest {
+					margin-bottom: 30px;
 					position: relative;
 					.invest__top {
 						margin-bottom: 20px;
-						h5 {
-							font-weight: 600;
-						}
+						font-weight: 600;	
+						font-size: 18px;
+					}
+					.invest__bot {
+						display: flex;
+						position: relative;
+						justify-content: space-around;
+						width: 100%;
 						&::after {
 							content: "";
 							width: 100%;
 							height: 2px;
-							bottom: 39px;
+							bottom: 9px;
 							background: #ccc;
 							position: absolute;
 						}
-					}
-					.invest__bot {
-						display: flex;
-						justify-content: space-around;
-						width: 100%;
 						.bot__item {
 							position: relative;
 							display: flex;
@@ -460,36 +460,36 @@ header {
 				}
 			}
 		}
-		.trade {
+		.content__trade {
 			.trade__header {
 				border-bottom: 2px solid #ccc;
-				h4 {
-					color: #868686;
-					padding: 10px 0;
-					font-weight: 600;
-				}
+				color: #868686;
+				padding: 10px 0;
+				font-weight: 600;	
+				font-size: 20px;
 			}
 			.trade__content {
-				.content__quest1 {
+				.content__top {
 					padding: 30px 0;
 					h5 {
 						font-weight: 600;
 						margin-bottom: 20px;
 					}
-					.exchange,
-					.share,
-					.spread {
-						padding: 20px 0;
+					.top__exchange,
+					.top__share,
+					.top__spread {
+						margin-bottom: 20px;
 						display: flex;
 						flex-wrap: wrap;
 						justify-content: space-between;
+						position: relative;
 						h5 {
 							font-weight: 500;
 							width: 100%;
+							margin-bottom: 20px;
 						}
 						input {
 							display: none;
-
 							&:checked + label {
 								border: 3px solid #87c540;
 								i {
@@ -509,7 +509,7 @@ header {
 							@include font-size(18px);
 							text-align: center;
 							height: 60px;
-							line-height: 60px;
+							line-height: 56px;
 							display: block;
 							margin: 0;
 							cursor: pointer;
@@ -529,27 +529,27 @@ header {
 							}
 						}
 					}
-					.exchange {
+					.top__exchange {
 						.exchange__item {
 							width: 23%;
 							position: relative;
 						}
 					}
-					.share {
+					.top__share {
 						.share__item {
 							width: 23%;
 							position: relative;
 						}
 					}
-					.spread {
+					.top__spread {
 						.spread__item {
 							width: 23%;
 							position: relative;
 						}
 					}
 				}
-				.content__quest2,
-				.content__quest3 {
+				.content__mid,
+				.content__bot {
 					margin-bottom: 30px;
 					position: relative;
 					label {
@@ -568,7 +568,6 @@ header {
 				}
 			}
 		}
-
 		// }
 	}
 	.form-submit {
@@ -580,11 +579,9 @@ header {
 		cursor: pointer;
 		font-weight: 600;
 		transition: all 0.2s ease-in-out;
-		&.valid{
-			&:hover {
+		&:hover {
 			border-color: #87c540;
 			box-shadow: 3px 3px 5px rgba(#87c540, 0.8);
-			}
 		}
 		&.invalid {
 			&:hover {
