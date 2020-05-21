@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="Content-Language" content="en-us" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/vendor/bootstrap.css"/>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 title">
+						<h3>Create your account in minutes</h3>
+					</div>
+					<div class="col-lg-4 icon">
+						<i class="fas fa-lock"></i>
+						<img
+							src="https://www.exclusive-networks.com/asia-uk/wp-content/uploads/sites/19/2017/09/symantec.png"
+							alt="symantec logo"
+						/>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<form class="col-lg-8 register" action="#" method="GET">
+						
+						<fieldset class="step1">
+							<div class="step1__header active">
+								<h4>1. Personal information <span>Edit</span></h4>
+								<i class="fas fa-sort-down"></i>
+								<i class="fas fa-check-circle"></i>
+							</div>
+							<div class="step1__content">
+									<div class="content__name">
+										<div class="name__title">
+											<label for="title">Title</label>
+											<select name="title" id="title" class="form-control" required>
+												<option value="">-- Please select</option>
+												<option value="Mr">Mr.</option>
+												<option value="Ms">Ms.</option>
+											</select>
+										</div>
+										<div class="name__first-name">
+											<label for="first-name">First name</label>
+											<input
+												type="text"
+												id="first-name"
+												class="form-control"
+												required
+											/>
+											
+										</div>
+										<div class="name__last-name">
+											<label for="last-name">Last name</label>
+											<input
+												type="text"
+												id="last-name"
+												class="form-control"
+												required
+											/>
+											
+										</div>
+									</div>
+									<div class="content__dob">
+										<label>Day of birth</label>
+										<input
+											type="number"
+											placeholder="DD"
+											id="day"
+											class="form-control"
+											required
+											min="1"
+											max="31"
+										/>	
+										<input
+											type="number"
+											placeholder="MM"
+											id="month"
+											class="form-control"
+											required
+											min="1"
+											max="12"
+										/>
+										<input
+											type="number"
+											placeholder="YY"
+											id="year"
+											class="form-control"
+											required
+											min="1900"
+											max="9999"
+										/>
+									</div>
+									<div class="content__place">
+										<label for="city">Citizenship</label>
+										<select name="city" id="city" class="form-control" required>
+											<option value="">-- Please select</option>
+											<option value="HCM">Hồ Chí Minh</option>
+											<option value="HN">Hà Nội</option>
+											<option value="DN">Đà Nẵng</option>
+										</select>
+									</div>
+									<!-- <input type="button" value="Continue to step 2"/> -->
+									<button type="button">Continue</button>
+							</div>
+						</fieldset>
+						<fieldset class="step2">
+							<div class="step2__header">
+								<h4>2. Residency <span>Edit</a></h4>
+								<i class="fas fa-sort-down"></i>
+								<i class="fas fa-check-circle"></i>
+							</div>
+							<div class="step2__content">
+								<!-- <input type="button" value="Continue to step 3"/> -->
+								<button type="button">Continue</button>
+							</div>
+						</fieldset>
+						<fieldset class="step3">
+							<div class="step3__header">
+								<h4>3. Trading suitability</h4>
+								<i class="fas fa-sort-down"></i>
+							</div>
+							<div class="step3__content">
+								<div class="jumbotron">
+									As an FCA regular firm, we are required to assess whether our
+									products are appropriate for you. It is important that you
+									review these questions carefully and provide accurate
+									responses as they will be used to determine whether we can
+									approve your application for a trading account
+								</div>
+								<!-- <div class="content__info"> -->
+								<div class="content__employ">
+										<div class="employ__header">
+											<h4>Employment</h4>
+										</div>
+										<div class="employ__content">
+											<label for="status">Employment status</label>
+											<select name="status" id="status" class="form-control" required>
+												<option value="">-- Please select</option>
+												<option value="not employed">Not employed</option>
+												<option value="fulltime">Employed - fulltime</option>
+												<option value="partime">Employed - partime</option>
+												<option value="Self">Self - employed</option>
+												<option value="Retired">Retired</option>
+											</select>
+										</div>
+								</div>
+								<div class="content__finance">
+										<div class="finance__header">
+											Financial details
+										</div>
+										<div class="finance__content">
+											<div class="content__income">
+												<div class="income__top">
+													Total annual income
+												</div>
+												<div class="income__bot">
+													<div class="bot__item">
+														<label>&#163;0 - &#163;9k</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="income"
+															value="1"
+														 required/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;10 - &#163;24k</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="income"
+															value="2"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;25 - &#163;49k</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="income"
+															value="3"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;50 - &#163;99k</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="income"
+															value="4"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;100 - &#163;199k</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="income"
+															value="5"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;200k+</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="income"
+															value="6"
+															required
+														/>
+													</div>
+												</div>
+											</div>
+											<div class="content__invest">
+												<div class="invest__top">
+													Savings and investments
+												</div>
+												<div class="invest__bot">
+													<div class="bot__item">
+														<label>&#163;0 - &#163;1k</label>
+														<input
+															type="radio"
+															class="item__select"
+															name="invest"
+															value="1"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;2 - &#163;5k</label>
+														<input
+															type="radio"
+															name="invest"
+															class="item__select"
+															value="2"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;6 - &#163;50k</label>
+														<input
+															type="radio"
+															name="invest"
+															class="item__select"
+															value="3"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;51 - &#163;150k</label>
+														<input
+															type="radio"
+															name="invest"
+															class="item__select"
+															value="4"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;151 - &#163;500k</label>
+														<input
+															type="radio"
+															name="invest"
+															class="item__select"
+															value="5"
+															required
+														/>
+													</div>
+													<div class="bot__item">
+														<label>&#163;500k+</label>
+														<input
+															type="radio"
+															name="invest"
+															class="item__select"
+															value="6"
+															required
+														/>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="content__trade">
+										<div class="trade__header">
+											Trading experience
+										</div>
+										<div class="trade__content">
+											<div class="content__top">
+												<h5>
+													How frequently have you traded the following products
+													in the past year on an excution only basis?
+												</h5>
+												<div class="top__exchange">
+													<h5>
+														Exchange-trade derivatives such as futures and
+														option
+													</h5>
+													<div class="exchange__item">
+														<input
+															type="radio"
+															name="exchange"
+															value="frequently"
+															id="exchange-item1"
+															class="item__select"
+															required
+														/>
+														<label for="exchange-item1">Frequently <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="exchange__item">
+														<input
+															type="radio"
+															name="exchange"
+															value="regularly"
+															id="exchange-item2"
+															class="item__select"
+															required
+														/>
+														<label for="exchange-item2">Regularly <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="exchange__item">
+														<input
+															type="radio"
+															name="exchange"
+															value="occasionally"
+															id="exchange-item3"
+															class="item__select"
+															required
+														/>
+														<label for="exchange-item3">Occasionally <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="exchange__item">
+														<input
+															type="radio"
+															name="exchange"
+															value="never"
+															id="exchange-item4"
+															class="item__select"
+															required
+														/>
+														<label for="exchange-item4">Never <i class="fas fa-check-circle"></i></label>
+													</div>
+												</div>
+												<div class="top__share">
+													<h5>Shares and/or bonds</h5>
+													<div class="share__item">
+														<input
+															type="radio"
+															name="share"
+															value="frequently"
+															id="share-item1"
+															class="item__select"
+															required
+														/>
+														<label for="share-item1">Frequently <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="share__item">
+														<input
+															type="radio"
+															name="share"
+															value="regularly"
+															id="share-item2"
+															class="item__select"
+															required
+														/>
+														<label for="share-item2">Regularly <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="share__item">
+														<input
+															type="radio"
+															name="share"
+															value="occasionally"
+															id="share-item3"
+															class="item__select"
+															required
+														/>
+														<label for="share-item3">Occasionally <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="share__item">
+														<input
+															type="radio"
+															name="share"
+															value="never"
+															id="share-item4"
+															class="item__select"
+															required
+														/>
+														<label for="share-item4">Never <i class="fas fa-check-circle"></i></label>
+													</div>
+												</div>
+												<div class="top__spread">
+													<h5>Spread Bets, CFDs or margined FX</h5>
+													<div class="spread__item">
+														
+														<input
+															type="radio"
+															name="spread"
+                                                            value="frequently"
+                                                            id="spread-item1"
+															class="item__select"
+															required
+                                                        />
+                                                        <label for="spread-item1">Frequently <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="spread__item">
+														
+														<input
+															type="radio"
+															name="spread"
+                                                            value="regularly"
+                                                            id="spread-item2"
+															class="item__select"
+															required
+                                                        />
+                                                        <label for="spread-item2">Regularly <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="spread__item">
+														
+														<input
+															type="radio"
+															name="spread"
+                                                            value="occasionally"
+                                                            id="spread-item3"
+															class="item__select"
+															required
+                                                        />
+                                                        <label for="spread-item3">Occasionally <i class="fas fa-check-circle"></i></label>
+													</div>
+													<div class="spread__item">
+														
+														<input
+															type="radio"
+															name="spread"
+                                                            value="never"
+                                                            id="spread-item4"
+															class="item__select"
+															required
+                                                        />
+                                                        <label for="spread-item4">Never <i class="fas fa-check-circle"></i></label>
+													</div>
+												</div>
+											</div>
+											<div class="content__mid">
+												<label for="quest2"
+													>Do you have any relevant work experience that
+													provides you with a good understanding of trading
+													leveraged products?</label
+												>
+												<select name="quest2" id="quest2" class="form-control" required>
+													<option value=''>--Please select</option>
+													<option value="no">No</option>
+													<option value="yes">Yes</option>
+												</select>
+											</div>
+											<div class="content__bot">
+												<label for="quest3"
+													>Do you have any relevant qualifications that provides
+													you with a good understanding of trading leveraged
+													products?</label
+												>
+												<select name="quest3" id="quest3" class="form-control" required>
+													<option value=''>--Please select</option>
+													<option value="no">No</option>
+													<option value="yes">Yes</option>
+												</select>
+											</div>
+										</div>
+								</div>
+								<button type="submit" class="form-submit">Submit application</button>
+							</div>
+						</fieldset>
+					</form>
+					<aside class="col-lg-4 info">
+						<div class="info__top">
+							<h5>Application summary</h5>
+							<p>Mr Samuel Smith</p>
+							<div class="top__product">
+								<h6>Product</h6>
+								<p>Spread Betting</p>
+							</div>
+							<div class="top__mail">
+								<h6>Email</h6>
+								<p>samuel.smith@</p>
+							</div>
+							<div class="top__phone">
+								<h6>Phone</h6>
+								<p>+44 (0)7777 777 777</p>
+							</div>
+						</div>
+						<div class="info__mid">
+							<div class="jumbotron">
+								<p>Important documents to read before you apply:</p>
+								<ul>
+									<li>- Risk Disclosure Notice</li>
+									<li>- Terms and conditions</li>
+									<li>- Spread Betting service terms</li>
+									<li>- Privacy policy</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info__bot">
+							<h6>Need help?</h6>
+							<ul>
+								<li><a href="tel:+8488888888"><i class="fas fa-phone"></i>Phone us</a></li>
+								<li><a href="mailto:name@email.com"><i class="fas fa-envelope"></i>Email us</a></li>
+								<li><a href="#"><i class="fas fa-comment"></i>Live chat</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</main>
+		<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
